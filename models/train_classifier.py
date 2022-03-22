@@ -83,6 +83,15 @@ def build_model():
 
 
 def evaluate_model(model, X_test, y_test, col_names):
+    """
+    Input:
+        model: pipeline built in build_model
+        X_test: test features
+        Y_test: test labels
+        col_names: 36 category labels
+    Output:
+        classification report for 36 categories
+    """
     y_pred = model.predict(X_test)
     
     for i in range(len(col_names)):
@@ -93,6 +102,13 @@ def evaluate_model(model, X_test, y_test, col_names):
 
 
 def save_model(model, model_filepath):
+    """
+    Input:
+        model: built model from build_model
+        model_filepath: destination path to save .pkl file
+    Output:
+        saved model .pkl file
+    """
     with open(model_filepath, 'wb') as file:
         pickle.dump(model, file)
 

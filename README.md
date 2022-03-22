@@ -29,8 +29,11 @@ The ETL pipeline that processes message and category data from CSV files, and lo
 There is an additional `run.py` flask file that runs the app. train_classifier build, create and evelauate the necessary code to obtain the final model classifier.pkl used to categorize the disaster message.
 
 ## Project Structure <a name="structure"></a>
+
 app
+
 | - template
+
 | |- master.html # main page of web app
 | |- go.html # classification result page of web app
 |- run.py # Flask file that runs app

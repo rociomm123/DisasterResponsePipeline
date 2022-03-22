@@ -16,7 +16,7 @@ There should be no necessary libraries to run the code here beyond the Anaconda 
 test
 ## Project Motivation<a name="motivation"></a>
 
-In this project,  1000s of real messages will be analyzed providing by figuring that were sent during natural disasters, either via social media, or directly to disaster response organizations. This project caterogize the disaster messages.
+In this project,  1000s of real messages will be analyzed providing by figuring that were sent during natural disasters, either via social media, or directly to disaster response organizations. This project caterogize the disaster messages. This application helps people or organization during an event of a disaster.
 
 
 ## File Descriptions <a name="files"></a>

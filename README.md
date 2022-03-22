@@ -7,8 +7,9 @@ Disaster Response Pipeline
 1. [Installation](#installation)
 2. [Project Motivation](#motivation)
 3. [File Descriptions](#files)
-4. [Results](#results)
-5. [Instructions](#licensing)
+4. [Project structure](#structure) 
+5. [Results](#results)
+6. [Instructions](#licensing)
 
 ## Installation <a name="installation"></a>
 
@@ -26,6 +27,22 @@ There are 2 notebooks available here to showcase work related to the above quest
 The ETL pipeline that processes message and category data from CSV files, and load them into a sequel lite database, which your machine learning pipeline will then read from to create and save a multi output supervised learning model.
 
 There is an additional `run.py` flask file that runs the app. train_classifier build, create and evelauate the necessary code to obtain the final model classifier.pkl used to categorize the disaster message.
+
+## Project Structure <a name="structure"></a>
+app
+| - template
+| |- master.html # main page of web app
+| |- go.html # classification result page of web app
+|- run.py # Flask file that runs app
+data
+|- disaster_categories.csv # data to process
+|- disaster_messages.csv # data to process
+|- process_data.py
+|- InsertDatabaseName.db # database to save clean data to
+models
+|- train_classifier.py
+|- classifier.pkl # saved model
+README.md
 
 ## Results<a name="results"></a>
 
